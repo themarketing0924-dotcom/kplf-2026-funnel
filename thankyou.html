@@ -8,32 +8,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="glass-card">
-            <h2 style="color: var(--accent-gold); text-align: center;">🎉 신청이 완료되었습니다!</h2>
-            <h1 style="text-align: center;">[Day 1] 왜 매일 밤새워 일하는데 통장 잔고는 그대로일까?</h1>
-            
-            <p style="text-align: center; margin-bottom: 2rem; color: var(--text-secondary);">
-                스마트폰 알림을 끄고 딱 3분만 집중해주세요. 끝까지 시청하시는 분들께 특별한 보너스가 있습니다.
-            </p>
+    <div class="container" style="max-width: 1000px; padding-top: 4rem;">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <div class="eyebrow" style="color: var(--accent-gold); font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">🎉 솔루션 1일 차 도착</div>
+            <h1 class="main-headline" style="font-size: 2.8rem; margin-top: 1rem;">[Day 1] 왜 매일 밤새워 일하는데 통장 잔고는 그대로일까?</h1>
+            <p style="color: var(--text-secondary); font-size: 1.1rem;">스마트폰 알림을 끄고 딱 3분만 집중해주세요. 끝까지 시청하시는 분들께 특별한 보너스가 있습니다.</p>
+        </div>
 
-            <div class="video-wrapper">
-                <!-- YouTube or Vimeo Iframe -->
-                <iframe src="https://www.youtube.com/embed/placeholder1" allowfullscreen></iframe>
+        <div class="video-wrapper" style="box-shadow: 0 0 40px rgba(139, 92, 246, 0.2); border-radius: 12px; margin-bottom: 3rem;">
+            <!-- Placeholder for Video -->
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="비디오 재생" style="width: 100%; display: block; opacity: 0.8;">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80px; height: 80px; background: var(--accent-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 0 30px rgba(245, 158, 11, 0.6);">
+                <div style="width: 0; height: 0; border-style: solid; border-width: 15px 0 15px 25px; border-color: transparent transparent transparent #000; margin-left: 5px;"></div>
             </div>
+        </div>
 
-            <a href="masterclass.html" class="cta-button" style="margin-bottom: 2rem;">내일 공개될 [Day 2] 영상 미리 확인하기 ➔</a>
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <a href="masterclass.html" class="cta-button" style="display: inline-block; padding: 1.5rem 3rem; font-size: 1.3rem;">내일 공개될 [Day 2] 영상 미리 확인하기 ➔</a>
+        </div>
 
-            <div class="comments-section">
-                <h3>💬 실시간 대표님들의 반응</h3>
-                <p style="color: #9CA3AF; margin-top: 1rem;"><strong>김*수 대표 (세무사):</strong> 와... 제가 딱 이 상황이었습니다. 팩트 폭행 제대로 당했네요. 내일 2일 차 영상이 너무 기대됩니다!</p>
-                <hr style="border-color: #374151; margin: 1rem 0;">
-                <p style="color: #9CA3AF;"><strong>이*진 원장 (클리닉):</strong> 블로그 글쓰다 밤새는 제 모습을 보는 줄 알았습니다. 다음 해결책이 뭔지 정말 미치도록 궁금합니다.</p>
-                
-                <div style="margin-top: 2rem;">
-                    <input type="text" class="form-input" placeholder="이 영상에 대한 대표님의 생각을 남겨주세요...">
-                    <button class="cta-button" style="padding: 0.8rem; font-size: 1rem;">댓글 남기기</button>
+        <div class="section bg-light" style="border-radius: 16px;">
+            <h2 style="text-align: center; color: white; margin-bottom: 2rem;">💬 실시간 대표님들의 반응</h2>
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <div style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-glass);">
+                    <p style="color: #D1D5DB; margin-bottom: 0.5rem;">"와... 제가 딱 이 상황이었습니다. 팩트 폭행 제대로 당했네요. 내일 2일 차 영상이 너무 기대됩니다!"</p>
+                    <p style="color: var(--accent-gold); font-size: 0.9rem;"><strong>- 김*수 대표 (세무사)</strong></p>
                 </div>
+                <div style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-glass);">
+                    <p style="color: #D1D5DB; margin-bottom: 0.5rem;">"블로그 글쓰다 밤새는 제 모습을 보는 줄 알았습니다. 다음 해결책이 뭔지 정말 미치도록 궁금합니다."</p>
+                    <p style="color: var(--accent-gold); font-size: 0.9rem;"><strong>- 이*진 원장 (클리닉)</strong></p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 3rem;">
+                <input type="text" style="width: 100%; padding: 1.2rem; background: #111827; border: 1px solid #374151; color: white; border-radius: 8px; margin-bottom: 1rem;" placeholder="이 영상에 대한 대표님의 생각을 남겨주세요...">
+                <button class="cta-button" style="padding: 1rem;">댓글 남기기</button>
             </div>
         </div>
     </div>
