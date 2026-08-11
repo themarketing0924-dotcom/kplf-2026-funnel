@@ -148,5 +148,26 @@
         <p>&copy; 2026 GrowthAI Inc. All Rights Reserved. | 개인정보처리방침</p>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Add animation class to elements
+            const targets = document.querySelectorAll('.hero-content, .hero-media, .section-title, .reason-card, .curr-item, .persona-image, .persona-text, .gold-box, .native-form');
+            targets.forEach(el => el.classList.add('animate-on-scroll'));
+
+            // Setup Intersection Observer
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Animate only once
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
 </html>
