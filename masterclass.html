@@ -1,68 +1,136 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class="h-full scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마스터클래스 VOD 포털</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>K-PLF 성공 후기 (Case Studies)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Pretendard', sans-serif; }
+        .bg-navy { background-color: #0B1120; }
+        .text-gold { color: #F59E0B; }
+        .bg-gold { background-color: #F59E0B; }
+    </style>
 </head>
-<body>
-    <div class="container" style="max-width: 1200px; padding-top: 3rem;">
-        <h1 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem; background: linear-gradient(to right, #ffffff, #9ca3af); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">무인 세일즈 마스터클래스 포털</h1>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
 
-        <!-- Video Thumbnails / Navigation (Jeff Walker Style) -->
-        <div class="video-thumbnails" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 3rem;">
-            <div class="thumb-card" style="cursor:pointer; padding: 1.5rem;" onclick="location.href='thankyou.html'">
-                <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;">Day 1</div>
-                <strong style="color:var(--text-secondary)">[시청 완료]</strong>
-            </div>
-            <div class="thumb-card active" style="padding: 1.5rem; background: rgba(245, 158, 11, 0.1); border-color: var(--accent-gold);">
-                <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem; color: var(--accent-gold);">Day 2</div>
-                <strong style="color:var(--accent-gold)">[현재 시청 중]</strong>
-            </div>
-            <div class="thumb-card locked" style="padding: 1.5rem;">
-                <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;">Day 3</div>
-                <strong style="color:var(--text-secondary)">해결책과 패러다임 시프트</strong>
-            </div>
-            <div class="thumb-card locked" style="padding: 1.5rem;">
-                <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;">Day 4</div>
-                <strong style="color:var(--text-secondary)">만능 AI 프롬프트</strong>
-            </div>
-        </div>
-
-        <div class="section bg-light" style="border-radius: 16px; padding: 3rem 2rem;">
-            <h2 style="color: var(--accent-gold); text-align: center; font-size: 2rem;">[Day 2] 제가 병원 신세에서 월 천만 원 자동 수익으로 부활한 이야기</h2>
-            <p style="text-align: center; margin-bottom: 2rem; color: var(--text-secondary); font-size: 1.1rem;">
-                여러분이 돈을 못 버는 건 능력이 부족해서가 아닙니다. 낡은 상식을 버리고 패러다임을 시프트하세요.
+    <!-- 1. 면책 모달 (Disclaimer Modal) - 자바스크립트로 제어하도록 구조만 -->
+    <div id="disclaimer-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
+        <div class="bg-white p-8 rounded-xl max-w-lg text-center shadow-2xl m-4">
+            <h2 class="text-2xl font-black mb-4 text-red-600">중요: 사례 연구 열람 전 필독</h2>
+            <p class="text-gray-700 mb-6 leading-relaxed">
+                이 사례 연구 페이지에는 100개가 넘는 놀라운 실화들이 담겨 있습니다. 이 결과들은 결코 평균적이거나 일반적인 것이 아닙니다.<br><br>
+                하지만 여러분이 무엇을 기대해야 하는가가 아니라, <strong>검증된 시스템을 따랐을 때 무엇이 가능한지</strong>를 증명하기 위해 이곳에 공개합니다. 진지한 비즈니스 마인드를 가진 분들만 열람해 주시기 바랍니다.
             </p>
-
-            <div class="video-wrapper" style="box-shadow: 0 0 40px rgba(139, 92, 246, 0.2); border-radius: 12px; margin-bottom: 3rem;">
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="비디오 재생" style="width: 100%; display: block; opacity: 0.8;">
-                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80px; height: 80px; background: var(--accent-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 0 30px rgba(245, 158, 11, 0.6);">
-                    <div style="width: 0; height: 0; border-style: solid; border-width: 15px 0 15px 25px; border-color: transparent transparent transparent #000; margin-left: 5px;"></div>
-                </div>
-            </div>
-
-            <!-- PDF Download Bonus for Day 2 -->
-            <div style="background: rgba(245, 158, 11, 0.1); border-left: 4px solid var(--accent-gold); padding: 2rem; margin-bottom: 3rem; border-radius: 0 8px 8px 0;">
-                <h3 style="color: var(--accent-gold); margin-bottom: 0.5rem; font-size: 1.5rem;">🎁 오늘 영상의 미션 혜택</h3>
-                <p style="font-size: 1.1rem;">아래 댓글란에 오늘 영상에서 얻은 <strong>'가장 큰 깨달음'</strong>을 남겨주시면, 내일 알림톡으로 특별 PDF 가이드북을 발송해 드립니다.</p>
-            </div>
-
-            <div class="comments-section" style="background: transparent;">
-                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">💬 실시간 대표님들의 반응 (Day 2)</h3>
-                <div style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-glass); margin-bottom: 2rem;">
-                    <p style="color: #D1D5DB; margin-bottom: 0.5rem;">"와, 제 탓이 아니었다니 눈물이 날 뻔했습니다. 자동화 배관의 개념이 이제야 잡히네요."</p>
-                    <p style="color: var(--accent-gold); font-size: 0.9rem;"><strong>- 박*호 대표</strong></p>
-                </div>
-                
-                <div style="margin-top: 2rem;">
-                    <input type="text" style="width: 100%; padding: 1.2rem; background: #111827; border: 1px solid #374151; color: white; border-radius: 8px; margin-bottom: 1rem;" placeholder="이 영상에서 얻은 가장 큰 깨달음은 무엇인가요?">
-                    <button class="cta-button" style="padding: 1.2rem; font-size: 1.1rem;">댓글 남기고 혜택 받기</button>
-                </div>
-            </div>
+            <button onclick="document.getElementById('disclaimer-modal').style.display='none'" class="w-full bg-navy text-white font-bold py-3 rounded hover:bg-gray-800 transition">
+                동의하고 성공 사례 보기
+            </button>
         </div>
     </div>
+
+    <!-- 헤더 -->
+    <header class="bg-navy py-12 text-center text-white border-b-4 border-gold">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h1 class="text-3xl md:text-5xl font-black mb-4">
+                K-PLF 무인 런칭 100+ 성공 사례
+            </h1>
+            <p class="text-xl text-gray-300">
+                가장 밑바닥에서 시작해 완벽한 자동화 배관을 구축한 평범한 사람들의 비범한 증명
+            </p>
+        </div>
+    </header>
+
+    <!-- 2. 8대 직군별 카테고리 필터링 (Niche Filtering) -->
+    <section class="py-10 bg-white border-b border-gray-200">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="flex flex-wrap justify-center gap-3">
+                <button class="px-6 py-2 rounded-full bg-navy text-white font-bold text-sm">전체 보기</button>
+                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-bold text-sm hover:bg-gray-200">프로골퍼 / 예체능 레슨</button>
+                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-bold text-sm hover:bg-gray-200">네트워크 마케팅</button>
+                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-bold text-sm hover:bg-gray-200">마사지·체형교정</button>
+                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-bold text-sm hover:bg-gray-200">외식·밀키트</button>
+                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-bold text-sm hover:bg-gray-200">전문직 (의사/변호사)</button>
+                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-bold text-sm hover:bg-gray-200">지식 창업가 (코치/강사)</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 스토리 카드 4단계 공식 (Story Card Framework) -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 반복될 스토리 카드 템플릿 -->
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
+                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">
+                        [인터뷰 썸네일 이미지]
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <!-- 헤드라인 -->
+                        <h3 class="text-xl font-black mb-4 leading-tight">"퇴직금 500만 원으로 시작해 3주 만에 4,400만 원 런칭 성공"</h3>
+                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                            <!-- 이전의 고통 (Before) -->
+                            <p><strong>Before:</strong> 매일 12시간씩 일해도 늘어나는 빚과 지인 영업의 한계에 부딪혔습니다.</p>
+                            <!-- 돌파구 (Epiphany) -->
+                            <p><strong>Epiphany:</strong> K-PLF 4단계 동영상 세일즈 퍼널과 무인 자동화 배관 장착을 알게 되었습니다.</p>
+                            <!-- 결과의 변화 (After) -->
+                            <p><strong>After:</strong> 이제는 자는 동안에도 전국에서 수강생과 결제가 몰려드는 삶을 살고 있습니다.</p>
+                        </div>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                    </div>
+                </div>
+                
+                <!-- Placeholder for more cards -->
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
+                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
+                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                            <p><strong>Before:</strong> [이전의 고통 작성란]</p>
+                            <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
+                            <p><strong>After:</strong> [결과의 변화 작성란]</p>
+                        </div>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
+                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
+                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                            <p><strong>Before:</strong> [이전의 고통 작성란]</p>
+                            <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
+                            <p><strong>After:</strong> [결과의 변화 작성란]</p>
+                        </div>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. [지금 참여하기] 고정 CTA -->
+    <div class="fixed bottom-0 left-0 w-full bg-white border-t-4 border-gold p-4 shadow-2xl z-40">
+        <div class="container mx-auto max-w-4xl flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="text-center md:text-left">
+                <p class="font-bold text-lg text-navy">이들의 다음 성공 사례는 바로 당신입니다.</p>
+                <p class="text-sm text-gray-600">지금 K-PLF 정규 코스에 합류하세요.</p>
+            </div>
+            <a href="join.html" class="w-full md:w-auto px-8 py-3 bg-gold text-black font-black text-xl rounded shadow-lg hover:bg-yellow-600 transition text-center">
+                [K-PLF 코스 합류하기 ➔]
+            </a>
+        </div>
+    </div>
+
+    <footer class="bg-black py-10 text-center text-gray-500 text-sm mb-24 md:mb-20">
+        <p>저작권 &copy; 2026 GrowthAI Inc. | 이용약관 | 개인정보 보호정책</p>
+    </footer>
+
 </body>
 </html>
