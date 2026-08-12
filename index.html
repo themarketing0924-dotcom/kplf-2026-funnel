@@ -11,6 +11,22 @@
         .glass-panel { background: rgba(15, 22, 38, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .neon-text { color: #00E5FF; text-shadow: 0 0 10px rgba(0, 229, 255, 0.5); }
     </style>
+
+    <style>
+        /* Apple-style Scroll Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+    </style>
 </head>
 <body class="bg-[#050B14] text-gray-300 font-sans antialiased selection:bg-[#00E5FF] selection:text-[#050B14]">
 
@@ -50,7 +66,7 @@
     </div>
 
     <!-- 1. Hero Section (Navy) -->
-    <section class="relative bg-[#030712] overflow-hidden py-16 md:py-24">
+    <section class="relative bg-[#030712] overflow-hidden py-16 md:py-24 reveal">
         <div class="container mx-auto px-6 lg:flex lg:items-center gap-12">
             <div class="w-full lg:w-3/5 text-center lg:text-left relative z-20 animate-on-scroll">
                 <div class="text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] font-bold tracking-widest mb-4">👑 런칭 마스터클래스에 오신 것을 환영합니다</div>
@@ -84,7 +100,7 @@
     </section>
 
     <!-- 2. Social Proof Section (White) -->
-    <section class="py-20 bg-[#0F1626] border border-white/10">
+    <section class="py-20 bg-[#0F1626] border border-white/10 reveal">
         <div class="container mx-auto px-6 text-center animate-on-scroll">
             <h2 class="text-3xl md:text-4xl font-black text-white mb-6">
                 28년 동안 10억 달러(약 1조 3,000억 원) 이상의 매출을 창출한 검증된 런칭 공식
@@ -101,7 +117,7 @@
     </section>
 
     <!-- 3. Gold Highlight Box -->
-    <section class="py-16 bg-[#080D1A]">
+    <section class="py-16 bg-[#080D1A] reveal">
         <div class="container mx-auto px-6 animate-on-scroll">
             <div class="bg-gradient-to-r from-[#00E5FF] to-[#0088FF] text-white shadow-[0_0_20px_rgba(0,229,255,0.4)] p-10 rounded-3xl text-center shadow-xl border-4 border-yellow-500">
                 <h3 class="text-3xl md:text-4xl font-black text-[#050B14] mb-4">"단 4일 만에 당신의 비즈니스는 완전히 달라집니다."</h3>
@@ -113,7 +129,7 @@
     </section>
 
     <!-- 4. Success Stories 1 (Cards) -->
-    <section class="py-20 bg-[#0F1626] border border-white/10">
+    <section class="py-20 bg-[#0F1626] border border-white/10 reveal">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="p-8 bg-[#080D1A] rounded-2xl border border-white/5 shadow-lg animate-on-scroll">
@@ -146,7 +162,7 @@
     </section>
 
     <!-- 5. 4 Modules (Dark Blue) -->
-    <section class="py-24 bg-[#0B1120] text-white">
+    <section class="py-24 bg-[#0B1120] text-white reveal">
         <div class="container mx-auto px-6 max-w-5xl">
             <h2 class="text-3xl md:text-5xl font-black text-center mb-16 text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] animate-on-scroll">
                 마스터클래스 4대 핵심 모듈
@@ -191,7 +207,7 @@
     </section>
 
     <!-- 7. The Last Question (Navy/Gold Highlight) -->
-    <section class="py-24 bg-[#080D1A]">
+    <section class="py-24 bg-[#080D1A] reveal">
         <div class="container mx-auto px-6 max-w-4xl animate-on-scroll">
             <div class="bg-[#0F1626] border border-white/10 p-10 md:p-16 rounded-3xl shadow-2xl border-t-8 border-[#00E5FF]">
                 <h2 class="text-3xl md:text-4xl font-black mb-8 text-white leading-tight">
@@ -215,7 +231,7 @@
     </section>
 
     <!-- 8. Instructor Section (White) -->
-    <section class="py-20 bg-[#0F1626] border border-white/10 border-t border-white/5">
+    <section class="py-20 bg-[#0F1626] border border-white/10 border-t border-white/5 reveal">
         <div class="container mx-auto px-6 max-w-5xl animate-on-scroll">
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="w-full md:w-1/3">
@@ -237,7 +253,7 @@
     </section>
 
     <!-- 9. Final Urgency CTA (Dark) -->
-    <section id="enroll" class="py-24 bg-[#050A14]">
+    <section id="enroll" class="py-24 bg-[#050A14] reveal">
         <div class="container mx-auto px-6 max-w-3xl text-center animate-on-scroll">
             <h2 class="text-4xl md:text-5xl font-black text-white mb-8 leading-tight">
                 런칭 마스터클래스에 참여하시려면 지금 바로 자리를 예약하세요.
@@ -297,5 +313,30 @@
             });
         });
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            const revealOptions = {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target); // Trigger only once
+                    }
+                });
+            }, revealOptions);
+
+            reveals.forEach(reveal => {
+                revealOnScroll.observe(reveal);
+            });
+        });
+    </script>
 </body>
+
 </html>

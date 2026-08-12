@@ -11,6 +11,22 @@
         .glass-panel { background: rgba(15, 22, 38, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .neon-text { color: #00E5FF; text-shadow: 0 0 10px rgba(0, 229, 255, 0.5); }
     </style>
+
+    <style>
+        /* Apple-style Scroll Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+    </style>
 </head>
 <body class="bg-[#050B14] text-gray-300 font-sans antialiased selection:bg-[#00E5FF] selection:text-[#050B14]">
 
@@ -29,7 +45,7 @@
     </div>
 
     <!-- 헤더 -->
-    <header class="bg-[#030712] py-12 text-center text-white border-b-4 border-[#00E5FF]">
+    <header class="bg-[#030712] py-12 text-center text-white border-b-4 border-[#00E5FF] reveal">
         <div class="container mx-auto px-6 max-w-4xl">
             <h1 class="text-3xl md:text-5xl font-black mb-4">
                 K-PLF 무인 런칭 100+ 성공 사례
@@ -41,7 +57,7 @@
     </header>
 
     <!-- 2. 8대 직군별 카테고리 필터링 (Niche Filtering) -->
-    <section class="py-10 bg-[#0F1626] border border-white/10 border-b border-white/10">
+    <section class="py-10 bg-[#0F1626] border border-white/10 border-b border-white/10 reveal">
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="flex flex-wrap justify-center gap-3">
                 <button class="px-6 py-2 rounded-full bg-[#030712] text-white font-bold text-sm">전체 보기</button>
@@ -56,7 +72,7 @@
     </section>
 
     <!-- 3. 스토리 카드 4단계 공식 (Story Card Framework) -->
-    <section class="py-16 bg-[#080D1A]">
+    <section class="py-16 bg-[#080D1A] reveal">
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
@@ -340,5 +356,30 @@
         <p>저작권 &copy; 2026 GrowthAI Inc. | 이용약관 | 개인정보 보호정책</p>
     </footer>
 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            const revealOptions = {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target); // Trigger only once
+                    }
+                });
+            }, revealOptions);
+
+            reveals.forEach(reveal => {
+                revealOnScroll.observe(reveal);
+            });
+        });
+    </script>
 </body>
+
 </html>

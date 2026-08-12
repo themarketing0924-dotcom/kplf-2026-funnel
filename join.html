@@ -11,11 +11,27 @@
         .glass-panel { background: rgba(15, 22, 38, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .neon-text { color: #00E5FF; text-shadow: 0 0 10px rgba(0, 229, 255, 0.5); }
     </style>
+
+    <style>
+        /* Apple-style Scroll Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+    </style>
 </head>
 <body class="bg-[#050B14] text-gray-300 font-sans antialiased selection:bg-[#00E5FF] selection:text-[#050B14]">
 
     <!-- 히어로 섹션 -->
-    <header class="bg-[#030712] py-20 text-center text-white border-b-4 border-[#00E5FF] relative overflow-hidden">
+    <header class="bg-[#030712] py-20 text-center text-white border-b-4 border-[#00E5FF] relative overflow-hidden reveal">
         <div class="container mx-auto px-6 max-w-4xl relative z-10">
             <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
                 지금이 바로 당신의 비즈니스를 <br><span class="text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)]">무인 런칭 배관</span>으로 전환할 때입니다.
@@ -39,7 +55,7 @@
 
             <div class="space-y-24">
                 <!-- Pillar 1 -->
-                <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="flex flex-col md:flex-row items-center gap-10 reveal">
                     <div class="w-full md:w-1/2 bg-[#1E293B] aspect-video rounded-xl flex items-center justify-center font-bold text-gray-400">[이미지/아이콘]</div>
                     <div class="w-full md:w-1/2">
                         <span class="text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] font-bold text-sm uppercase">Pillar 1</span>
@@ -51,7 +67,7 @@
                 </div>
 
                 <!-- Pillar 2 -->
-                <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+                <div class="flex flex-col md:flex-row-reverse items-center gap-10 reveal">
                     <div class="w-full md:w-1/2 bg-[#1E293B] aspect-video rounded-xl flex items-center justify-center font-bold text-gray-400">[이미지/아이콘]</div>
                     <div class="w-full md:w-1/2">
                         <span class="text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] font-bold text-sm uppercase">Pillar 2</span>
@@ -63,7 +79,7 @@
                 </div>
 
                 <!-- Pillar 3 -->
-                <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="flex flex-col md:flex-row items-center gap-10 reveal">
                     <div class="w-full md:w-1/2 bg-[#1E293B] aspect-video rounded-xl flex items-center justify-center font-bold text-gray-400">[이미지/아이콘]</div>
                     <div class="w-full md:w-1/2">
                         <span class="text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] font-bold text-sm uppercase">Pillar 3</span>
@@ -75,7 +91,7 @@
                 </div>
 
                 <!-- Pillar 4 -->
-                <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+                <div class="flex flex-col md:flex-row-reverse items-center gap-10 reveal">
                     <div class="w-full md:w-1/2 bg-[#1E293B] aspect-video rounded-xl flex items-center justify-center font-bold text-gray-400">[이미지/아이콘]</div>
                     <div class="w-full md:w-1/2">
                         <span class="text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] font-bold text-sm uppercase">Pillar 4</span>
@@ -120,7 +136,7 @@
     </main>
 
     <!-- 결제 CTA 섹션 -->
-    <section id="enroll" class="py-24 bg-gray-900 text-white border-t border-gray-800">
+    <section id="enroll" class="py-24 bg-gray-900 text-white border-t border-gray-800 reveal">
         <div class="container mx-auto px-6 max-w-4xl text-center">
             <h2 class="text-4xl font-black mb-4">지금 바로 시작하십시오</h2>
             <p class="text-xl text-gray-400 mb-12">선착순 보너스가 마감되기 전에 K-PLF 마스터클래스 티켓을 확보하세요.</p>
@@ -153,5 +169,30 @@
         <p>저작권 &copy; 2026 GrowthAI Inc. | 이용약관 | 개인정보 보호정책</p>
     </footer>
 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            const revealOptions = {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target); // Trigger only once
+                    }
+                });
+            }, revealOptions);
+
+            reveals.forEach(reveal => {
+                revealOnScroll.observe(reveal);
+            });
+        });
+    </script>
 </body>
+
 </html>
