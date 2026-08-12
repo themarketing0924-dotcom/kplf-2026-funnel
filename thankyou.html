@@ -6,22 +6,21 @@
     <title>K-PLF 마스터클래스 등록 완료 및 1강 온보딩</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Pretendard', sans-serif; }
-        .bg-navy { background-color: #0B1120; }
-        .text-gold { color: #F59E0B; }
-        .bg-gold { background-color: #F59E0B; }
+        <style>
+        body { font-family: 'Pretendard', sans-serif; background-color: #050B14; }
+        .glass-panel { background: rgba(15, 22, 38, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .neon-text { color: #00E5FF; text-shadow: 0 0 10px rgba(0, 229, 255, 0.5); }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+<body class="bg-[#050B14] text-gray-300 font-sans antialiased selection:bg-[#00E5FF] selection:text-[#050B14]">
 
     <!-- 1. 환영 헤더 & 실시간 수강권 활성화 (Live Cohort Gate) -->
-    <header class="bg-navy py-12 text-center text-white border-b-4 border-gold">
+    <header class="bg-[#030712] py-12 text-center text-white border-b-4 border-[#00E5FF]">
         <div class="container mx-auto px-6 max-w-4xl">
-            <div class="inline-block bg-red-600 text-white px-4 py-1 rounded-full font-bold text-sm mb-6 animate-pulse">
+            <div class="inline-block bg-[#FF3366] text-white px-4 py-1 rounded-full font-bold text-sm mb-6 animate-pulse">
                 🔴 LIVE COHORT 2026 대한민국 K-PLF 마스터클래스 실시간 입장 완료
             </div>
-            <h1 class="text-3xl md:text-5xl font-black mb-6 text-gold">
+            <h1 class="text-3xl md:text-5xl font-black mb-6 text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)]">
                 축하합니다, [고객명] 대표님!<br>
                 <span class="text-white text-2xl md:text-4xl mt-2 block">2026 무인 런칭 마스터클래스 수강 티켓이 정상 발급되었습니다.</span>
             </h1>
@@ -33,16 +32,16 @@
     </header>
 
     <!-- 10. 마이크로 진단 설문 (맨 위로 올려 즉각적인 행동 유도) -->
-    <section class="py-16 bg-white border-b border-gray-200 shadow-sm relative z-10 -mt-8">
+    <section class="py-16 bg-[#0F1626] border border-white/10 border-b border-white/10 shadow-sm relative z-10 -mt-8">
         <div class="container mx-auto px-6 max-w-3xl">
-            <div class="bg-gray-50 border border-gray-200 rounded-2xl p-8 shadow-xl text-center">
+            <div class="bg-[#080D1A] border border-white/10 rounded-2xl p-8 shadow-xl text-center">
                 <h2 class="text-2xl font-black mb-4">🚨 1강 VOD 시청 전 필수 단계: 마이크로 진단</h2>
-                <p class="text-gray-600 mb-8">아래 4가지 짧은 질문에 답해주시면, 대표님의 상황에 딱 맞는 <strong>[맞춤형 1호 워크북 PDF + 1강 VOD]</strong> 시청 링크가 즉시 열립니다.</p>
+                <p class="text-gray-400 mb-8">아래 4가지 짧은 질문에 답해주시면, 대표님의 상황에 딱 맞는 <strong>[맞춤형 1호 워크북 PDF + 1강 VOD]</strong> 시청 링크가 즉시 열립니다.</p>
                 
                 <form class="text-left space-y-6">
                     <div>
                         <label class="font-bold block mb-2">1. 현재 비즈니스 직군</label>
-                        <select class="w-full p-3 border rounded">
+                        <select class="w-full p-3 border-white/20 bg-[#0B1120] text-white rounded">
                             <option>선택해주세요</option>
                             <option>프로골퍼 / 예체능 레슨</option>
                             <option>네트워크 마케팅</option>
@@ -56,7 +55,7 @@
                     </div>
                     <div>
                         <label class="font-bold block mb-2">2. 현재 월 매출 구간</label>
-                        <select class="w-full p-3 border rounded">
+                        <select class="w-full p-3 border-white/20 bg-[#0B1120] text-white rounded">
                             <option>준비 중</option>
                             <option>300만 원 미만</option>
                             <option>300~1,000만 원</option>
@@ -66,7 +65,7 @@
                     </div>
                     <div>
                         <label class="font-bold block mb-2">3. 보유 중인 제품/지식 형태</label>
-                        <select class="w-full p-3 border rounded">
+                        <select class="w-full p-3 border-white/20 bg-[#0B1120] text-white rounded">
                             <option>1:1 레슨·코칭</option>
                             <option>오프라인 매장</option>
                             <option>전자책·온라인 강의</option>
@@ -76,13 +75,13 @@
                     </div>
                     <div>
                         <label class="font-bold block mb-2">4. 목표 월 수익</label>
-                        <select class="w-full p-3 border rounded">
+                        <select class="w-full p-3 border-white/20 bg-[#0B1120] text-white rounded">
                             <option>월 1,000만 원 자동화 배관 구축</option>
                             <option>월 3,000만 원 런칭 달성</option>
                             <option>1억 원 퀀텀점프</option>
                         </select>
                     </div>
-                    <button type="button" class="w-full bg-gold hover:bg-yellow-600 text-black font-black text-xl py-4 rounded-lg shadow-lg">
+                    <button type="button" class="w-full bg-gradient-to-r from-[#00E5FF] to-[#0088FF] text-white shadow-[0_0_20px_rgba(0,229,255,0.4)] hover:from-[#00BFFF] hover:to-[#0077FF] text-[#050B14] font-black text-xl py-4 rounded-lg shadow-lg">
                         설문 완료하고 1강 영상 시청하기 ➔
                     </button>
                 </form>
@@ -91,12 +90,12 @@
     </section>
 
     <!-- 2. 불공정한 우위 (The Unfair Advantage & AI) -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-[#080D1A]">
         <div class="container mx-auto px-6 max-w-4xl text-center">
-            <h2 class="text-3xl md:text-4xl font-black mb-6 text-gray-900">
+            <h2 class="text-3xl md:text-4xl font-black mb-6 text-white">
                 대한민국 지식·전문직 비즈니스를 위한 가장 확실한 성공 공식… 그리고 이제 AI로 10배 더 쉬워졌습니다.
             </h2>
-            <p class="text-xl text-gray-700 leading-relaxed">
+            <p class="text-xl text-gray-300 leading-relaxed">
                 누구나 내 사업으로 높은 수익과 시간적 자유를 원합니다. 하지만 <strong>"어떻게 고객이 스스로 지갑을 열고 내 지식과 서비스를 줄 서서 사게 만들 것인가?"</strong><br><br>
                 마케팅 천재가 아니어도 괜찮습니다. 지난 20년간 수천억 원의 매출로 검증된 단 하나의 공식(K-PLF)과 <strong>한국형 런칭 AI `Launchy.ai®`</strong>가 그 과정을 10배 빠르게 단축시켜 드립니다.
             </p>
@@ -104,40 +103,40 @@
     </section>
 
     <!-- 3. 실제 수강생들의 폭발적인 후기 (Social Proof Wall) -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-[#0F1626] border border-white/10">
         <div class="container mx-auto px-6 max-w-6xl">
             <h2 class="text-3xl font-black text-center mb-12">8대 직군 실전 성공 증언</h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-50 p-6 rounded-xl border">
-                    <p class="italic text-gray-700 mb-4">"레슨 시간 팔아 월 500 벌다가, K-PLF 4단계 VSL 배관을 깔고 첫 달 온라인 비거리 마스터클래스로 4,280만 원 완판했습니다."</p>
-                    <p class="font-bold text-gray-900">- 김진호 프로 (골프 레슨)</p>
+                <div class="bg-[#080D1A] p-6 rounded-xl border">
+                    <p class="italic text-gray-300 mb-4">"레슨 시간 팔아 월 500 벌다가, K-PLF 4단계 VSL 배관을 깔고 첫 달 온라인 비거리 마스터클래스로 4,280만 원 완판했습니다."</p>
+                    <p class="font-bold text-white">- 김진호 프로 (골프 레슨)</p>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-xl border">
-                    <p class="italic text-gray-700 mb-4">"지인에게 부탁하는 영업을 전면 중단했습니다. Launchy.ai® 알림톡 배관으로 매달 80명의 사업 파트너가 제게 먼저 찾아옵니다."</p>
-                    <p class="font-bold text-gray-900">- 이성훈 리더 (네트워크 마케팅)</p>
+                <div class="bg-[#080D1A] p-6 rounded-xl border">
+                    <p class="italic text-gray-300 mb-4">"지인에게 부탁하는 영업을 전면 중단했습니다. Launchy.ai® 알림톡 배관으로 매달 80명의 사업 파트너가 제게 먼저 찾아옵니다."</p>
+                    <p class="font-bold text-white">- 이성훈 리더 (네트워크 마케팅)</p>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-xl border">
-                    <p class="italic text-gray-700 mb-4">"지방에서 올라오지 못하는 고객들을 위해 4주 홈케어 프로그램을 런칭했고, 오픈 15분 만에 3,600만 원 마감되었습니다."</p>
-                    <p class="font-bold text-gray-900">- 박서연 원장 (체형교정)</p>
+                <div class="bg-[#080D1A] p-6 rounded-xl border">
+                    <p class="italic text-gray-300 mb-4">"지방에서 올라오지 못하는 고객들을 위해 4주 홈케어 프로그램을 런칭했고, 오픈 15분 만에 3,600만 원 마감되었습니다."</p>
+                    <p class="font-bold text-white">- 박서연 원장 (체형교정)</p>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-xl border">
-                    <p class="italic text-gray-700 mb-4">"1,000만 원짜리 기업 자문 계약을 콜드콜 없이 오직 3편의 사전 영상(PLC)만으로 성사시켰습니다."</p>
-                    <p class="font-bold text-gray-900">- 정재우 대표 (B2B 컨설턴트)</p>
+                <div class="bg-[#080D1A] p-6 rounded-xl border">
+                    <p class="italic text-gray-300 mb-4">"1,000만 원짜리 기업 자문 계약을 콜드콜 없이 오직 3편의 사전 영상(PLC)만으로 성사시켰습니다."</p>
+                    <p class="font-bold text-white">- 정재우 대표 (B2B 컨설턴트)</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 4. 당신이 지금까지 막혀있었던 진짜 이유 (Agitation & Reality) -->
-    <section class="py-20 bg-navy text-white text-center">
+    <section class="py-20 bg-[#030712] text-white text-center">
         <div class="container mx-auto px-6 max-w-4xl">
-            <h2 class="text-3xl md:text-4xl font-black mb-8 text-gold">솔직하게 이야기해 봅시다. 당신을 가로막고 있던 것은 무엇이었습니까?</h2>
+            <h2 class="text-3xl md:text-4xl font-black mb-8 text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)]">솔직하게 이야기해 봅시다. 당신을 가로막고 있던 것은 무엇이었습니까?</h2>
             <ul class="text-lg text-gray-300 text-left space-y-4 mb-8">
                 <li>✓ 머릿속에 훌륭한 강의나 서비스 아이디어는 있지만, 막상 시장에 내놓지 못하고 망설였습니까?</li>
                 <li>✓ 고객을 돕고 싶은 열정은 가득한데, 그들이 거절할 수 없는 압도적인 오퍼(Offer)를 만들지 못했습니까?</li>
                 <li>✓ 혹은 비즈니스를 하고 있지만 매일 고객을 찾아 헤매느라 정작 내 삶의 여유가 사라졌습니까?</li>
             </ul>
-            <p class="text-xl font-bold bg-white/10 p-6 rounded-lg">
+            <p class="text-xl font-bold bg-[#0F1626] border border-white/10/10 p-6 rounded-lg">
                 당신이 멈춰있었던 이유는 단 두 가지뿐입니다. '검증된 런칭 전략의 부재'이거나, '복잡한 마케팅 배관 실행의 실패'였습니다.<br>
                 이번 마스터클래스에서 이 두 가지를 한 번에 완벽하게 끝내드립니다.
             </p>
@@ -145,48 +144,48 @@
     </section>
 
     <!-- 5. 3단계 마스터클래스 핵심 로드맵 (Curriculum Breakdown) -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-[#0F1626] border border-white/10">
         <div class="container mx-auto px-6 max-w-5xl">
             <h2 class="text-3xl font-black text-center mb-12">마스터클래스 핵심 로드맵 미리보기</h2>
             <div class="space-y-6">
-                <div class="p-6 border-l-4 border-gold bg-gray-50 rounded-r-lg shadow-sm">
+                <div class="p-6 border-l-4 border-[#00E5FF] bg-[#080D1A] rounded-r-lg shadow-sm">
                     <h3 class="text-2xl font-bold mb-2">Lesson 1: 기회 발견 (The Opportunity & Core Strategy)</h3>
-                    <p class="text-gray-700">기존의 일방적 세일즈를 뒤집어 고객이 "제발 제 돈을 가져가세요"라고 외치게 만드는 가치 기반 사전 예열(Pre-launch) 원리.</p>
+                    <p class="text-gray-300">기존의 일방적 세일즈를 뒤집어 고객이 "제발 제 돈을 가져가세요"라고 외치게 만드는 가치 기반 사전 예열(Pre-launch) 원리.</p>
                 </div>
-                <div class="p-6 border-l-4 border-gold bg-gray-50 rounded-r-lg shadow-sm">
+                <div class="p-6 border-l-4 border-[#00E5FF] bg-[#080D1A] rounded-r-lg shadow-sm">
                     <h3 class="text-2xl font-bold mb-2">Lesson 2: 3대 런칭 성장 모델 (The 3 Launch Models)</h3>
-                    <p class="text-gray-700">시드 런칭(0원으로 제품 만들기 전 선결제 받기), 인터널 런칭(기존 고객 10배 폭발), 조인트 벤처 런칭.</p>
+                    <p class="text-gray-300">시드 런칭(0원으로 제품 만들기 전 선결제 받기), 인터널 런칭(기존 고객 10배 폭발), 조인트 벤처 런칭.</p>
                 </div>
-                <div class="p-6 border-l-4 border-gold bg-gray-50 rounded-r-lg shadow-sm">
+                <div class="p-6 border-l-4 border-[#00E5FF] bg-[#080D1A] rounded-r-lg shadow-sm">
                     <h3 class="text-2xl font-bold mb-2">Lesson 3: 무인 런칭 블루프린트 & 완공 세션 (The Blueprint)</h3>
-                    <p class="text-gray-700">4단계 VSL 스크립트와 N8N 24시간 결제 배관이 하나로 결합된 1인 기업 무인 자동화 배관의 실체.</p>
+                    <p class="text-gray-300">4단계 VSL 스크립트와 N8N 24시간 결제 배관이 하나로 결합된 1인 기업 무인 자동화 배관의 실체.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 6, 7, 8, 9. 권위자, 경제 안보, 진심어린 편지, 왜 무료인가? -->
-    <section class="py-20 bg-gray-100">
+    <section class="py-20 bg-[#121A2F]">
         <div class="container mx-auto px-6 max-w-4xl">
             <!-- Economic Security -->
             <div class="mb-16 text-center">
                 <h2 class="text-3xl font-black mb-4">불황과 고물가 시대, 누구도 빼앗아갈 수 없는 나만의 안전 자산</h2>
-                <p class="text-lg text-gray-700">경기 침체와 직업의 불안정 속에서 진정한 자유와 안전은 <strong>'내 지식과 서비스를 가치로 전환하여 고단가로 판매할 수 있는 내 소유의 마케팅 배관'</strong>을 가질 때만 가능합니다. K-PLF 마스터클래스는 플랫폼 알고리즘에 휘둘리지 않고 내 고객 명단(List)과 세일즈 파이프라인을 온전히 소유하는 법을 알려드립니다.</p>
+                <p class="text-lg text-gray-300">경기 침체와 직업의 불안정 속에서 진정한 자유와 안전은 <strong>'내 지식과 서비스를 가치로 전환하여 고단가로 판매할 수 있는 내 소유의 마케팅 배관'</strong>을 가질 때만 가능합니다. K-PLF 마스터클래스는 플랫폼 알고리즘에 휘둘리지 않고 내 고객 명단(List)과 세일즈 파이프라인을 온전히 소유하는 법을 알려드립니다.</p>
             </div>
 
             <!-- Authority & Letter -->
-            <div class="bg-white p-10 rounded-2xl shadow-xl flex flex-col md:flex-row gap-8 mb-16">
+            <div class="bg-[#0F1626] border border-white/10 p-10 rounded-2xl shadow-xl flex flex-col md:flex-row gap-8 mb-16">
                 <div class="w-full md:w-1/3">
-                    <div class="aspect-[3/4] bg-gray-200 rounded-lg flex items-center justify-center font-bold text-gray-500">[강사 사진 및 저서 이미지]</div>
+                    <div class="aspect-[3/4] bg-[#1E293B] rounded-lg flex items-center justify-center font-bold text-gray-500">[강사 사진 및 저서 이미지]</div>
                 </div>
                 <div class="w-full md:w-2/3">
                     <h3 class="text-2xl font-black mb-4">[강사 이름] 대표</h3>
-                    <ul class="space-y-2 mb-6 text-sm text-gray-600 font-bold">
+                    <ul class="space-y-2 mb-6 text-sm text-gray-400 font-bold">
                         <li>• 매일경제출판 베스트셀러 8권 저자</li>
                         <li>• 대한민국 1인 지식창업 & AI 마케팅 총괄 멘토</li>
                         <li>• "지식과 기술을 가진 자가 마케팅 기술이 없어 사라지는 일이 없도록, 가장 안전하고 빠른 배관을 놓아드립니다."</li>
                     </ul>
-                    <div class="prose prose-sm text-gray-700">
+                    <div class="prose prose-sm text-gray-300">
                         <p>저 역시 처음부터 거대한 시스템을 가졌던 것이 아닙니다. 수많은 시행착오와 실패를 겪으며 한 명의 고객을 모으기 위해 밤을 새우던 시절이 있었습니다.</p>
                         <p>하지만 제프 워커의 런칭 공식을 한국 실정에 맞추고 AI를 결합한 순간, 비즈니스는 완전히 달라졌습니다. 모든 비즈니스는 '0'에서 시작합니다. 이번 마스터클래스를 통해 여러분의 0을 100으로 만드는 확실한 전환점을 선물해 드리겠습니다.</p>
                     </div>
@@ -194,8 +193,8 @@
             </div>
 
             <!-- The Goodwill Principle -->
-            <div class="bg-navy text-white p-10 rounded-2xl text-center shadow-lg">
-                <h3 class="text-2xl font-black mb-4 text-gold">"이렇게 귀한 핵심 노하우를 왜 무료로 공개하나요?"</h3>
+            <div class="bg-[#030712] text-white p-10 rounded-2xl text-center shadow-lg">
+                <h3 class="text-2xl font-black mb-4 text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)]">"이렇게 귀한 핵심 노하우를 왜 무료로 공개하나요?"</h3>
                 <p class="text-lg text-gray-300 leading-relaxed">
                     답은 매우 단순하고 투명합니다.<br>
                     먼저 여러분에게 압도적인 가치를 증명하여 성과를 내게 해드리면, 그중 일부는 자연스럽게 GrowthAI의 정규 VIP 패밀리이자 평생의 파트너가 될 것임을 확신하기 때문입니다.<br>

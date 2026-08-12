@@ -6,31 +6,30 @@
     <title>K-PLF 성공 후기 (Case Studies)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Pretendard', sans-serif; }
-        .bg-navy { background-color: #0B1120; }
-        .text-gold { color: #F59E0B; }
-        .bg-gold { background-color: #F59E0B; }
+        <style>
+        body { font-family: 'Pretendard', sans-serif; background-color: #050B14; }
+        .glass-panel { background: rgba(15, 22, 38, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .neon-text { color: #00E5FF; text-shadow: 0 0 10px rgba(0, 229, 255, 0.5); }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+<body class="bg-[#050B14] text-gray-300 font-sans antialiased selection:bg-[#00E5FF] selection:text-[#050B14]">
 
     <!-- 1. 면책 모달 (Disclaimer Modal) - 자바스크립트로 제어하도록 구조만 -->
     <div id="disclaimer-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
-        <div class="bg-white p-8 rounded-xl max-w-lg text-center shadow-2xl m-4">
-            <h2 class="text-2xl font-black mb-4 text-red-600">중요: 사례 연구 열람 전 필독</h2>
-            <p class="text-gray-700 mb-6 leading-relaxed">
+        <div class="bg-[#0F1626] border border-white/10 p-8 rounded-xl max-w-lg text-center shadow-2xl m-4">
+            <h2 class="text-2xl font-black mb-4 text-[#FF3366]">중요: 사례 연구 열람 전 필독</h2>
+            <p class="text-gray-300 mb-6 leading-relaxed">
                 이 사례 연구 페이지에는 100개가 넘는 놀라운 실화들이 담겨 있습니다. 이 결과들은 결코 평균적이거나 일반적인 것이 아닙니다.<br><br>
                 하지만 여러분이 무엇을 기대해야 하는가가 아니라, <strong>검증된 시스템을 따랐을 때 무엇이 가능한지</strong>를 증명하기 위해 이곳에 공개합니다. 진지한 비즈니스 마인드를 가진 분들만 열람해 주시기 바랍니다.
             </p>
-            <button onclick="document.getElementById('disclaimer-modal').style.display='none'" class="w-full bg-navy text-white font-bold py-3 rounded hover:bg-gray-800 transition">
+            <button onclick="document.getElementById('disclaimer-modal').style.display='none'" class="w-full bg-[#030712] text-white font-bold py-3 rounded hover:bg-gray-800 transition">
                 동의하고 성공 사례 보기
             </button>
         </div>
     </div>
 
     <!-- 헤더 -->
-    <header class="bg-navy py-12 text-center text-white border-b-4 border-gold">
+    <header class="bg-[#030712] py-12 text-center text-white border-b-4 border-[#00E5FF]">
         <div class="container mx-auto px-6 max-w-4xl">
             <h1 class="text-3xl md:text-5xl font-black mb-4">
                 K-PLF 무인 런칭 100+ 성공 사례
@@ -42,282 +41,282 @@
     </header>
 
     <!-- 2. 8대 직군별 카테고리 필터링 (Niche Filtering) -->
-    <section class="py-10 bg-white border-b border-gray-200">
+    <section class="py-10 bg-[#0F1626] border border-white/10 border-b border-white/10">
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="flex flex-wrap justify-center gap-3">
-                <button class="px-6 py-2 rounded-full bg-navy text-white font-bold text-sm">전체 보기</button>
-                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-bold text-sm hover:bg-gray-200">프로골퍼 / 예체능 레슨</button>
-                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-bold text-sm hover:bg-gray-200">네트워크 마케팅</button>
-                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-bold text-sm hover:bg-gray-200">마사지·체형교정</button>
-                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-bold text-sm hover:bg-gray-200">외식·밀키트</button>
-                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-bold text-sm hover:bg-gray-200">전문직 (의사/변호사)</button>
-                <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-bold text-sm hover:bg-gray-200">지식 창업가 (코치/강사)</button>
+                <button class="px-6 py-2 rounded-full bg-[#030712] text-white font-bold text-sm">전체 보기</button>
+                <button class="px-6 py-2 rounded-full bg-[#121A2F] text-gray-300 font-bold text-sm hover:bg-[#1E293B]">프로골퍼 / 예체능 레슨</button>
+                <button class="px-6 py-2 rounded-full bg-[#121A2F] text-gray-300 font-bold text-sm hover:bg-[#1E293B]">네트워크 마케팅</button>
+                <button class="px-6 py-2 rounded-full bg-[#121A2F] text-gray-300 font-bold text-sm hover:bg-[#1E293B]">마사지·체형교정</button>
+                <button class="px-6 py-2 rounded-full bg-[#121A2F] text-gray-300 font-bold text-sm hover:bg-[#1E293B]">외식·밀키트</button>
+                <button class="px-6 py-2 rounded-full bg-[#121A2F] text-gray-300 font-bold text-sm hover:bg-[#1E293B]">전문직 (의사/변호사)</button>
+                <button class="px-6 py-2 rounded-full bg-[#121A2F] text-gray-300 font-bold text-sm hover:bg-[#1E293B]">지식 창업가 (코치/강사)</button>
             </div>
         </div>
     </section>
 
     <!-- 3. 스토리 카드 4단계 공식 (Story Card Framework) -->
-    <section class="py-16 bg-gray-50">
+    <section class="py-16 bg-[#080D1A]">
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col">
-                    <div class="bg-gray-200 h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
+                <div class="bg-[#0F1626] border border-white/10 rounded-xl shadow-lg border border-white/5 overflow-hidden flex flex-col">
+                    <div class="bg-[#1E293B] h-48 flex items-center justify-center font-bold text-gray-400">[인터뷰 썸네일 이미지]</div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <span class="text-xs font-bold text-gold uppercase mb-2">[카테고리명]</span>
+                        <span class="text-xs font-bold text-[#00E5FF] drop-shadow-[0_0_8px_rgba(0,229,255,0.5)] uppercase mb-2">[카테고리명]</span>
                         <h3 class="text-xl font-black mb-4 leading-tight">[핵심 결과 헤드라인 작성란]</h3>
-                        <div class="text-sm text-gray-600 space-y-3 flex-grow">
+                        <div class="text-sm text-gray-400 space-y-3 flex-grow">
                             <p><strong>Before:</strong> [이전의 고통 작성란]</p>
                             <p><strong>Epiphany:</strong> [돌파구 작성란]</p>
                             <p><strong>After:</strong> [결과의 변화 작성란]</p>
                         </div>
-                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-navy hover:text-white transition">전체 영상 보기</button>
+                        <button class="mt-6 w-full py-2 border-2 border-navy text-navy font-bold rounded hover:bg-[#030712] hover:text-white transition">전체 영상 보기</button>
                     </div>
                 </div>
             </div>
@@ -325,13 +324,13 @@
     </section>
 
     <!-- 4. [지금 참여하기] 고정 CTA -->
-    <div class="fixed bottom-0 left-0 w-full bg-white border-t-4 border-gold p-4 shadow-2xl z-40">
+    <div class="fixed bottom-0 left-0 w-full bg-[#0F1626] border border-white/10 border-t-4 border-[#00E5FF] p-4 shadow-2xl z-40">
         <div class="container mx-auto max-w-4xl flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="text-center md:text-left">
                 <p class="font-bold text-lg text-navy">이들의 다음 성공 사례는 바로 당신입니다.</p>
-                <p class="text-sm text-gray-600">지금 K-PLF 정규 코스에 합류하세요.</p>
+                <p class="text-sm text-gray-400">지금 K-PLF 정규 코스에 합류하세요.</p>
             </div>
-            <a href="join.html" class="w-full md:w-auto px-8 py-3 bg-gold text-black font-black text-xl rounded shadow-lg hover:bg-yellow-600 transition text-center">
+            <a href="join.html" class="w-full md:w-auto px-8 py-3 bg-gradient-to-r from-[#00E5FF] to-[#0088FF] text-white shadow-[0_0_20px_rgba(0,229,255,0.4)] text-[#050B14] font-black text-xl rounded shadow-lg hover:from-[#00BFFF] hover:to-[#0077FF] transition text-center">
                 [K-PLF 코스 합류하기 ➔]
             </a>
         </div>
